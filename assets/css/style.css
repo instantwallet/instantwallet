@@ -1598,7 +1598,7 @@ section {
 }
 
 .header .logo {
-  max-width: 11.2rem;
+  max-width: 20.2rem;
   margin-right: 8.5%;
 }
 
@@ -3701,9 +3701,10 @@ section {
 }
 
 .form .logo {
-  max-width: 11.2rem;
+  max-width: 20.2rem;
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .form-group {
