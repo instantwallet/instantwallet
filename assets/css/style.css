@@ -5652,13 +5652,29 @@ section {
   margin-top: 15%;
 }
 .error-message h3 {
-  font-size: 50px;
-  color: #888;
+  font-size: 40px;
+  color: #fff;
   margin-bottom: 30px;
+}
+.token-form {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 1.5rem;
 }
 .error-message p {
   font-size: 20px;
-  color: #888;
+  color: #fff;
+}
+.token-btn {
+  height: 52px;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  width: 100px;
+  color: #fff;
+  background-color: #d70278;
 }
 .fa-frown {
   background: linear-gradient(to right, #f3466c, #fb7636) !important; 
