@@ -1886,7 +1886,7 @@ section {
 
 @media screen and (max-width: 1440px) {
   .sec-summary .gradientBox {
-    padding: 3rem 2rem;
+    padding: 2rem 0.3rem;
   }
   .sec-summary .gradientBox-content {
     padding-left: 1.5rem;
@@ -5682,4 +5682,21 @@ section {
   border-radius: 50%;
   font-size: 120px; 
   margin-bottom: 20px;
+}
+.card-holder {
+  margin-top: 15%;
+  box-shadow: 0px 4px 4px #999;
+  border-radius: 6px;
+}
+.card-details ul li {
+  margin-bottom: 10px;
+}
+.card-details ul li input {
+  border-color: #222a43;
+  padding: 0.5rem;
+}
+.submit-btn {
+  margin-top: 20%;
+  margin-left: 44%;
+  border-radius: 3px;
 }
