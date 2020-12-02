@@ -14,44 +14,46 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-    <title>Account Details | Instant Wallet</title>
+    <title>Confirm transaction| Instant Wallet</title>
   </head>
   <body style="background-color: #222a43;" id="body">
     
     <div class="card card-holder mb-3 mx-auto" style="max-width: 700px;">
         <div class="row">
-          <div class="col-md-4 pt-5">
+          <div class="col-md-4 pt-2">
             <img src="./assets/images/accesslogo.jpg" class="card-img" alt="User's Card">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h4 class="card-title text-center pb-5">Account Details</h4>
-              <div class="d-flex justify-content-between card-details">
-                <ul>
-                  <li>Account Name:</li>
-                  <li>Bank Name:</li>
-                  <li>Account Number:</li>
-                  <li>BVN:</li>
-                  <li>Amount:</li>
-                </ul>
-                <ul>
-                  <li>BASIL C. OSIGWE</li>
-                  <li>Access Bank</li>
-                  <li>0695255246</li>
-                  <li>22220007924</li>
-                  <li>
-                    <form action="confirm.html">
-                      ₦<input type="text" placeholder="Enter Amount" required /><br>
-                      <input type="submit" class="token-btn submit-btn" value="Continue" required />
-                    </form>
-                  </li>
-                </ul>
-              </div>
-        <!---->
+              <h4 class="card-title text-center pb-5">Please confirm this transaction by entering your pin</h4>  
+              <form>
+                  <div>
+                    <input type="password" name="password" placeholder="Enter pin" required />
+                    <button class="pay-btn" onclick="pin(this.form)" type="submit">Pay</button>
+                  </div>
+              </form> 
             </div>
           </div>
         </div>
-      </div>
+    </div>
+
+    <script type="text/javascript">
+        function pin(form) {
+          if (form.password.value === "1994") {
+            window.open("success.html");
+          }
+          else if (form.password.value === "") {
+            $(document).ready(function () {
+              $(".btn-filled").click(function () {
+                $(".message").append(" <b>Field is required</b>.");
+              });
+            });
+          }
+          else {
+            alert("Incorrect Pin");
+          }
+        }
+      </script>
 
     <!-- JS -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>

@@ -214,13 +214,13 @@
         var options4 = {
             series: [
                 {
-                    name: "Deposit",
-                    data: [12,0,0,0,0,0,0]
+                    name: "Credit",
+                    data: [12,0,0,0,8,2,0]
                     // data: [5, 10, 41, 35, 51, 49, 62]
                 },
                 {
-                    name: "Withdraw",
-                    data: [0,0,0,0,0,0,0]
+                    name: "Debit",
+                    data: [0,0,0,0,1,0,0]
                     // data: [50, 20, 35, 20, 75, 30, 60]
                 },
                 {
