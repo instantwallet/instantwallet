@@ -7,42 +7,42 @@
 
     <!-- All CSS -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/apexcharts.css">
+    <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/tagify.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-    <title>Confirm transaction| Instant Wallet</title>
+    <title>Token Input</title>
   </head>
-  <body style="background-color: #222a43;" id="body">
-    
-    <div class="card card-holder mb-3 mx-auto" style="max-width: 700px;">
-        <div class="row">
-          <div class="col-md-4 pt-2">
-            <img src="./assets/images/accesslogo.jpg" class="card-img" alt="User's Card">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h4 class="card-title text-center pb-5">Please confirm this transaction by entering your pin</h4>  
-              <form>
-                  <div>
-                    <input type="password" name="password" placeholder="Enter pin" required />
-                    <button class="pay-btn" onclick="pin(this.form)" type="submit">Pay</button>
-                  </div>
-              </form> 
-            </div>
-          </div>
-        </div>
+  <body style="background-color: #222a43;">
+    <div id="main-wrapper" class="error-message">
+
+      <!-- <i class="fa fa-frown" aria-hidden="true"></i> -->
+      <!-- <h3>Sorry!</h3> -->
+      <h3>Input Token to enable us re-activate your account.</h3>
+      <div class="token"> 
+        <form>
+          <input class="token-form" name="text" type="text" placeholder="Enter token here" required/>
+          <button onclick="token(this.form)" class="tokenInput-btn" type="submit">GET TOKEN</button>
+        </form>
+      </div>  
     </div>
 
     <script type="text/javascript">
-        function pin(form) {
-          if (form.password.value === "1994") {
-            window.open("enterToken.html");
+        function token(form) {
+          if (form.text.value === "20233") {
+            window.open("dashboard.html");
           }
-          else if (form.password.value === "") {
+          else if (form.text.value === "") {
             $(document).ready(function () {
               $(".btn-filled").click(function () {
                 $(".message").append(" <b>Field is required</b>.");
@@ -50,7 +50,7 @@
             });
           }
           else {
-            alert("Incorrect Pin");
+            alert("Incorrect Token");
           }
         }
       </script>

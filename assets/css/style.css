@@ -5671,10 +5671,16 @@ section {
   height: 52px;
   border: none;
   outline: none;
-  padding: 0 1rem;
+  padding: 1rem;
   width: 100px;
   color: #fff;
   background-color: #d70278;
+}
+.tokenInput-btn {
+  height: 51px;
+  padding: 1rem;
+  background-color: #d70278;
+  color: #fff;
 }
 .pay-btn {
   width: 100px;
