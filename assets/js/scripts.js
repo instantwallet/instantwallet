@@ -7,7 +7,6 @@
         $('body').append(demobtn);
         $('.dl-btn').on('click', function(){
             $('body').toggleClass('theme-dark');
-            console.log('test');
         })
     })
 
@@ -36,14 +35,12 @@
         let sel = $('.sidebar.sidebar-main');  
 
         if (ww < 768){
-            console.log('Small');
             sel.addClass('menu-sm')
             sel.removeClass('menu-lg')
             sel.removeClass('menu-md')
             tt();
         } 
         if(1199 >= ww && 768 <= ww){
-            console.log('medium');
             sel.addClass('menu-md')
             sel.removeClass('menu-sm')
             sel.removeClass('menu-lg')
@@ -53,7 +50,6 @@
             }
         }
         if(ww > 1200){
-            console.log('Large');                    
             sel.addClass('menu-lg')
             sel.removeClass('menu-sm')
             sel.removeClass('menu-md')
@@ -74,7 +70,6 @@
         let ww = $(window).width();
         let sel = $('.sidebar.sidebar-main');  
         if (ww < 768){
-            console.log('Small');
             if($('.sidebar-main').hasClass('menu-sm')){
                 sel.removeClass('menu-sm')
                 sel.addClass('menu-lg')
@@ -86,7 +81,6 @@
         }
         
         if(1200 >= ww && 768 <= ww){
-            console.log('medium');
             
             if($('.sidebar-main').hasClass('menu-md')){
                 sel.removeClass('menu-md')
@@ -100,7 +94,6 @@
         }
         
         if(ww > 1200){
-            console.log('Large');
             if($('.sidebar-main').hasClass('menu-lg')){
                 sel.removeClass('menu-lg')
                 sel.addClass('menu-md')
@@ -152,7 +145,6 @@
                     setTimeout(() => {
                         $(this).next().removeClass('active');                      
                     }, 1000);
-                    console.log('ok');
                     
                 }else if($($(this).next()).hasClass('in')){
                     $('.sub-menu').slideUp();
@@ -162,7 +154,6 @@
                     $('.sub-menu').removeClass('in');   
                     $(this).next().addClass('in');   
                     $(this).next().slideDown();   
-                    console.log('not');
                     
                 }
             }else{
@@ -399,17 +390,14 @@
     $(window).on('load resize', function() {
         var wwidth = $(window).width();
 
-        console.log(wwidth);
         
         if(wwidth < 768) {
             if($('.horizontal').hasClass('h-active')) {
                 $('.horizontal').removeClass('h-active')
-                // console.log('Yes');                
             }
 
         }else{            
             $('.horizontal').addClass('h-active')
-            // console.log('No');               
             
         }
     })
@@ -537,10 +525,8 @@
        ClassicEditor
         .create( document.querySelector( '#editor' ) )
         .then( editor => {
-            console.log( editor );
         } )
         .catch( error => {
-            console.error( error );
         } ); 
     }
     if($('#replyEditor').length > 0) {
@@ -549,10 +535,8 @@
             toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'imageUpload' ]
         })
         .then( editor => {
-            console.log( editor );
         } )
         .catch( error => {
-            console.error( error );
         } ); 
     }
 
@@ -611,10 +595,8 @@
             }
         } else {
             footer.css({paddingLeft: 0})
-            console.log('0');
         }
         
-        // console.log(sbWidth)
     })
 
     

@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,15 +22,38 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <title>Token Input</title>
-</head>
-
-<body style="background-color: #222a43;">
+  </head>
+  <body style="background-color: #222a43;">
     <div id="main-wrapper" class="error-message">
-        <i style="font-size: 60px;" class="text-danger far fa-times-circle"></i>
-        <p style="font-size: 20px;" class="pt-5">Your account has been locked due to suspected counterfeit activities. <br />Enter token to re-activate your account 
-            <a style="color: #d70278;" href="tokenInput.html">here</a>
-        </p>
+
+      <!-- <i class="fa fa-frown" aria-hidden="true"></i> -->
+      <!-- <h3>Sorry!</h3> -->
+      <h3>Input your bank token to confirm this transaction</h3>
+      <div class="token"> 
+        <form>
+          <input class="token-form" name="text" type="text" placeholder="Enter token here" required/>
+          <button onclick="token(this.form)" class="tokenInput-btn" type="submit">SUBMIT</button>
+        </form>
+      </div>  
     </div>
+
+    <script type="text/javascript">
+        function token(form) {
+          if (form.text.value === "10911623112") {
+            window.open("dashboard.html");
+          }
+          else if (form.text.value === "") {
+            $(document).ready(function () {
+              $(".btn-filled").click(function () {
+                $(".message").append(" <b>Field is required</b>.");
+              });
+            });
+          }
+          else {
+            alert("Incorrect Token");
+          }
+        }
+      </script>
 
     <!-- JS -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -50,6 +72,5 @@
     <script src="assets/js/perfect-scrollbar.min.js"></script>
     <script src="assets/js/chart-options.js"></script>
     <script src="assets/js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
