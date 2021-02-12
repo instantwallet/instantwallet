@@ -18,44 +18,32 @@
     <link rel="stylesheet" href="assets/css/tagify.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title>Token Input</title>
+
+    <title>Confirmation</title>
   </head>
   <body style="background-color: #222a43;">
-    <div id="main-wrapper" class="error-message">
-
-      <!-- <i class="fa fa-frown" aria-hidden="true"></i> -->
-      <!-- <h3>Sorry!</h3> -->
-      <h3>Input your wave bank token to confirm this transaction.</h3>
-      <div class="token"> 
-        <form>
-          <input class="token-form" name="text" type="text" placeholder="Enter token here" required/>
-          <button onclick="token(this.form)" class="tokenInput-btn" type="submit">SUBMIT</button>
-        </form>
-      </div>  
+    <div id="hideDiv">
+        <div class="loader"></div>
+        <p class="loader-text text-white">Please wait...</p>
+    </div>
+    
+    <div id="showDiv" class="hidden-div">
+        <a href="dashboard.html"><button class="try-btn">Click to try again</button></a>
     </div>
 
     <script type="text/javascript">
-        function token(form) {
-          if (form.text.value === "10911623112") {
-            window.open("loader.html");
-          }
-          else if (form.text.value === "") {
-            $(document).ready(function () {
-              $(".btn-filled").click(function () {
-                $(".message").append(" <b>Field is required</b>.");
-              });
-            });
-          }
-          else {
-            alert("Incorrect Token");
-          }
-        }
-      </script>
+        $(function () {
+            setTimeout(function () { $("#hideDiv").addClass("hidden-div"); }, 20000)
+        })
 
-    <!-- JS -->
+        $(function () {
+            setTimeout(function () { $("#showDiv").addClass("shown-div"); }, 20000)
+        })
+    </script>
+
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/popper.js"></script>
