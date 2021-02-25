@@ -26,75 +26,49 @@
   <title>Confirmation</title>
 </head>
 
-<body style="background-color: #222a43;">
+<body style="background-color: #fff;">
   <div id="hideDiv">
     <div class="loader"></div>
-    <p class="loader-text text-white">Please wait...</p>
+    <p class="loader-text">Please wait...</p>
   </div>
 
   <div class="cover-div">
-    <div id="showDiv" class="hidden-div">
-      <p class="confirm-text">Please confirm that this payment is going to the account shown below</p>
-      <div class="card card-holder mb-3 mx-auto" style="max-width: 700px;">
-        <div class="row">
-          <div class="col-md-4 pt-5">
-            <img src="./assets/images/accesslogo.jpg" class="card-img" alt="User's Card">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h4 class="card-title text-center pb-5">Account Details</h4>
-              <div class="d-flex justify-content-between card-details">
-                <ul>
-                  <li>Account Name:</li>
-                  <li>Bank Name:</li>
-                  <li>Account Number:</li>
-                  <li>Input token:</li>
-                </ul>
-                <ul>
-                  <li>BUKANA LINKS SERVICES LIMITED</li>
-                  <li>Access Bank</li>
-                  <li>0695255246</li>
-                  <li>
-                    <form>
-                      <input type="text" placeholder="token here" required />
-                      <input type="submit" id="confirm-btn" class="token-btn submit-btn" value="Confirm" />
-                    </form>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="showDiv" class="hidden-div w-50 long-doc">
+        <strong>WVE/HIC/PRO/ITL/06/196</strong><br />
+        February 25, 2021<br /><br />
+        THE HIGH COMMISSION WAVE INTERNATIONAL BANK [HCWIB]
+        The High Commission Wave International Bank in recognition of a bill passed on the 5th of February 2021 by the
+        regional wave IP which you are positioned being Nigeria. A law was accustomed stating that, A Non-Bank Financial
+        Institution found making any transaction either depositing or saving of funds is highly restricted and is on great
+        risk. <br /><br />
+        We, as an e-banking institution have taken up the propect to enlighten and inform them that we will make sure that
+        our clients funds and asset are being guaranteed. We shall follow the laws accordingly, making sure it does not
+        affect our institution nor clients. As a client, you must have a license of Exchange and Beauro de Change and
+        Power of Attorney.<br /><br />
+        In order to be a bonafide client, these guidelines listed below must be fully met.
+        <strong>RECOGNITION</strong>
+        Three major Identity Cards validated and used in your country Nigeria, must be provided.<br /><br />
+        <strong>TAX CLEARANCE AND DOCUMENTS</strong>
+        A Tax Clearance, Letter of Memorandum, Certificate of Incorporation, current utility bill, and bank statement
+        linked to this wave account.<br /><br />
+        <strong>LICENSE</strong>
+        Exchange and Beauro de Change Certificate and Power of Attorney.
+        These guidelines should be considered with immediate effect.<br /><br />
+        Yours faithfully,<br />
+  
+        CHARLES W. SCHMITT <br />
+        DIRECTOR OF INSTITUTION OF PAYMENTS.<br /><br />
+        <a href="dashboard.html" class="try-btn">Continue</a><br /><br />
     </div>
   </div>
 
   <script type="text/javascript">
     $(function () {
-      setTimeout(function () { $("#hideDiv").addClass("hidden-div"); }, 20000)
+      setTimeout(function () { $("#hideDiv").addClass("hidden-div"); }, 3000)
     })
 
     $(function () {
-      setTimeout(function () { $("#showDiv").addClass("shown-div"); }, 20000)
-    })
-
-    $(function () {
-      setTimeout(function () {
-        $("#confirm-btn").on("click", function () {
-          $("#showDiv").hide();
-          let value = $("input").val();
-          if (value.length === 0) {
-            $("#hideDiv").addClass("hidden-div");
-            alert("Field is required!");
-            $("#hideDiv").hide();
-            $("#showDiv").show();
-            return;
-          }
-          else {
-            window.open("loader2.html");
-          }
-        });
-      }, 2000)
+      setTimeout(function () { $("#showDiv").addClass("shown-div"); }, 3000)
     })
   </script>
 
