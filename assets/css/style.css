@@ -5688,6 +5688,12 @@ section {
   color: #fff;
   background-color: #d70278;
 }
+.sorry-btn {
+  width: 100px;
+  height: 39px;
+  color: #fff;
+  background-color: #d70278;
+}
 .fa-frown {
   background: linear-gradient(to right, #f3466c, #fb7636) !important; 
   color: #fff;
