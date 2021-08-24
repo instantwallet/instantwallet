@@ -1999,7 +1999,7 @@ section {
   color: #dee1e5;
   font-size: 1.4rem;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 1.4rem;
 }
 
