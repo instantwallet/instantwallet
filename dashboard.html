@@ -1,513 +1,395 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- All CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/css/daterangepicker.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/apexcharts.css">
-    <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/css/tagify.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- All CSS -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/apexcharts.css">
+  <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="assets/css/tagify.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
 
-    <title>Dashboard | Instant Wallet</title>
-  </head>
-  <body class="theme-dark" id="body">
-    <div id="main-wrapper">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-      <!-- Header strat -->
-      <header class="header sticky-header" style="background-color: #fff;">
-        <div class="container-fluid">
+  <title>Dashboard | Instant Wallet</title>
+</head>
 
-          <div class="d-flex align-items-center">
-            <a href="dashboard.html" class="logo">
-              <!-- <img src="assets/images/logomain.png" alt="Instant Wallet" /> -->
-              <h3 class="text-dark mt-2">Hellenic Bank Wallet</h3>
-            </a>
-            <button class="menu-toggler arrow">
-              <i class="fas fa-chevron-right text-dark"></i>
-            </button>
-            <!-- <a href="#" class="menu-toggler">
+<body class="theme-dark" id="body">
+  <div id="main-wrapper">
+
+    <!-- Header strat -->
+    <header class="header sticky-header" style="background-color: #fff;">
+      <div class="container-fluid">
+
+        <div class="d-flex align-items-center">
+          <a href="dashboard.html" class="logo">
+            <!-- <img src="assets/images/logomain.png" alt="Instant Wallet" /> -->
+            <h3 class="text-dark mt-2">Hellenic Bank Wallet</h3>
+          </a>
+          <button class="menu-toggler arrow">
+            <i class="fas fa-chevron-right text-dark"></i>
+          </button>
+          <!-- <a href="#" class="menu-toggler">
               <i class="ti-menu"></i>
             </a> -->
-            <!-- <div class="header-search d-none d-md-block">
+          <!-- <div class="header-search d-none d-md-block">
               <form action="#" class="search-form">
                 <input type="search" name="search" placeholder="Search here">
                 <button><i class="ti-search"></i></button>
               </form>
             </div> -->
 
-            <ul class="navbar-nav utility-nav ml-auto">
-              <li class="nav-item expand-screen">
-                <a href="javascript:void(0);">
-                  <i class="fas fa-expand text-black"></i>
-                </a>
-              </li>
-              
-              <li class="nav-item nav-profile">
+          <ul class="navbar-nav utility-nav ml-auto">
+            <li class="nav-item expand-screen">
+              <a href="javascript:void(0);">
+                <i class="fas fa-expand text-black"></i>
+              </a>
+            </li>
 
-                <a class="user-profile" href="#" role="button" id="profiletab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <!-- <figure class="avatar-circle-sm">
+            <li class="nav-item nav-profile">
+
+              <a class="user-profile" href="#" role="button" id="profiletab" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <!-- <figure class="avatar-circle-sm">
                     <img src="assets/images/avatar.jpg" alt="">
                     <span class="presence-indicator online"></span>
                   </figure> -->
-                  <figure class="avatar-default" style="background-color: #fb7636; color: #000">
-                    <!-- <span>bc</span>
+                <figure class="avatar-default" style="background-color: #fb7636; color: #000">
+                  <!-- <span>bc</span>
                     <span class="presence-indicator online"></span> -->
-                    <img src="./assets/images/avatars/instantpic.jpeg" alt="">
-                  </figure>
-                  <strong class="user-name text-dark">Marsyl Mponguili</strong>
-                </a>
-              </li>               
+                  <img src="./assets/images/avatars/instantpic.jpeg" alt="">
+                </figure>
+                <strong class="user-name text-dark">Marsyl Mponguili</strong>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a href="index.html" class="text-white"> 
-                  Log out &nbsp;<i class="fas fa-sign-out-alt text-dark"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </header>
-      <!-- Header strat -->
-
-      <main class="main-container">
-        
-        <nav class="sidebar sidebar-main">
-          <ul id="accordion">            
             <li class="nav-item">
-              <a href="account-details.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Transfer To Wallet</span>
+              <a href="index.html" class="text-white">
+                Log out &nbsp;<i class="fas fa-sign-out-alt text-dark"></i>
               </a>
-            </li>            
-            <li class="nav-item">
-              <a href="token.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Send To Abroad</span>
-              </a>
-            </li>            
-            <li class="nav-item">
-              <a href="token.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Transfer To Others</span>
-              </a>
-            </li>            
-            <li class="nav-item">
-              <a href="token.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Transfer Crypto</span>
-              </a>
-            </li>            
-            <li class="nav-item"> 
-              <a href="token.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Transfer To @ Ease Account</span>
-              </a>
-            </li>            
-            <li class="nav-item">
-              <a href="token.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Western Union Redemption</span>
-              </a>
-            </li>            
-            <li class="nav-item">
-              <a href="token.html">
-                <i class="fas fa-layer-group"></i>
-                <span>Fund Prepaid Card</span>
-              </a>
-            </li>            
+            </li>
           </ul>
-        </nav>
+        </div>
 
-          <div class="page-container">
-            <!-- <div class="container"> -->
-              <div class="sec-summary pt-0">
-                <div class="row">
-                  <div class="col-md-3 col-6">    
-                    <div class="gradientBox white-bg">
-                      <span class="iconbox"><img src="assets/images/icons/summary/7.png" alt="" /></span>
-                      <div class="gradientBox-content">
-                        <h5 class="title">Available balance</h5>
-                        <p style="font-size: 15px !important;">$3157.65 <small class="g-ratio upward">80%</small></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="gradientBox white-bg">
-                      <!-- <span class="iconbox"><img src="assets/images/icons/summary/8.png" alt="" /></span> -->
-                      <div class="gradientBox-content row">
-                        <div class="col">
-                          <h5 class="title">Account:</h5>
-                          <h5 class="title">Routing:</h5>
-                        </div>
-                        <div class="col">
-                          <p style="font-size: 18px !important;">......6746</p>
-                          <p style="font-size: 18px !important;">05300219</p>
-                        </div>
-                        
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="gradientBox white-bg">
-                      <span class="iconbox"><img src="assets/images/icons/summary/6.png" alt="" /></span>
-                      <div class="gradientBox-content">
-                        <h5 class="title">Pending Deposits/Credits</h5>
-                        <p style="font-size: 20px !important;">$0.00 <small class="g-ratio downward">2%</small></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="gradientBox white-bg">
-                      <span class="iconbox"><img src="assets/images/icons/summary/5.png" alt="" /></span>
-                      <div class="gradientBox-content">
-                        <h5 class="title">Pending Withdrawals/Debits</h5>
-                        <p style="font-size: 20px !important;">$0.00 <small class="g-ratio downward">2%</small></p>
-                      </div>
-                    </div>
-                  </div>
+      </div>
+    </header>
+    <!-- Header strat -->
+
+    <main class="main-container">
+
+      <nav class="sidebar sidebar-main">
+        <ul id="accordion">
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>POS fastpay</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Invest now</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Transfer To Others</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Nearby payments</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Bills payment</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transactions.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Recent Transactions</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Debit Card</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Payment Method</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Cheque books</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Lifestyle</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="token.html">
+              <i class="fas fa-layer-group"></i>
+              <span>Card funding</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-container">
+        <!-- <div class="container"> -->
+        <div class="sec-summary pt-0">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="gradientBox white-bg">
+                <span class="iconbox"><img src="assets/images/icons/summary/7.png" alt="" /></span>
+                <div class="gradientBox-content">
+                  <h5 class="title">Available balance</h5>
+                  <p style="font-size: 15px !important;">$500.25 <small class="g-ratio yellowward">9%</small></p>
                 </div>
               </div>
-    
-              <div class="row">
-                <div class="col-md-12 col-lg-12">
-                  <div class="card card-stretch daily-progress">
-                    <div class="d-md-flex">
-                      <div class="card-header flex-grow-1">
-                        <h4 class="card-title">Transactions History</h4>
-                        <span>Last 7 days</span>
-                      </div>
-                      <!-- <div class="custom-daterange">
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="gradientBox white-bg">
+                <!-- <span class="iconbox"><img src="assets/images/icons/summary/8.png" alt="" /></span> -->
+                <div class="gradientBox-content row">
+                  <div class="col">
+                    <h5 class="title">Account:</h5>
+                    <h5 class="title">Routing:</h5>
+                  </div>
+                  <div class="col">
+                    <p style="font-size: 18px !important;">......6746</p>
+                    <p style="font-size: 18px !important;">05300219</p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="gradientBox white-bg">
+                <span class="iconbox"><img src="assets/images/icons/summary/6.png" alt="" /></span>
+                <div class="gradientBox-content">
+                  <h5 class="title">Pending Deposits/Credits</h5>
+                  <p style="font-size: 20px !important;">$0.00 <small class="g-ratio downward">2%</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="gradientBox white-bg">
+                <span class="iconbox"><img src="assets/images/icons/summary/5.png" alt="" /></span>
+                <div class="gradientBox-content">
+                  <h5 class="title">Pending Withdrawals/Debits</h5>
+                  <p style="font-size: 20px !important;">$0.00 <small class="g-ratio downward">2%</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="card card-stretch daily-progress">
+              <div class="d-md-flex">
+                <div class="card-header flex-grow-1">
+                  <h4 class="card-title">Transactions History</h4>
+                  <span>Last 7 days</span>
+                </div>
+                <!-- <div class="custom-daterange">
                         <i class="far fa-calendar-alt"></i>
                         <input type="text" class="daterange" />
                       </div> -->
-                    </div>
-                    <div class="card-body">
-                      <div id="progress_chart"></div>
-                    </div>
-                  </div>
-                </div>
               </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
-                    <div class="d-md-flex align-items-center mb-4">
-                      <div class="card-header flex-grow-1">
-                        <h4 class="card-title">Recent Transactions</h4>
-                      </div>                      
-                    </div>
-                    <!-- <h4>No Transactions Have Been Recorded</h4> -->
-                    <div class="card-body table-responsive">
-                      <table class="table th-sticky">
-                        <thead>
-                          <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Transaction Type</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-
-                          <tr>
-                            <td>30-08-2021 <br/> 06:52:17</td>
-                            <td>$25.00</td>
-                            <td class="t-status pending">Wave Service Charge</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>29-08-2021 <br/> 03:44:22</td>
-                            <td>$500.00</td>
-                            <td class="t-status pending">Transfer to instant wallet</td>
-                            <td class="text-success">Credit</td>
-                          </tr>
-
-                          <tr>
-                            <td>18-08-2021 <br/> 18:47:10</td>
-                            <td>$2,220.21</td>
-                            <td class="t-status pending">Transfer to instant wallet</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>17-08-2021 <br/> 21:48:01</td>
-                            <td>$3,500.21</td>
-                            <td class="t-status pending">Transfer to Pacific Lumber company</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>17-08-2021 <br/> 17:18:08</td>
-                            <td>$500.00</td>
-                            <td class="t-status pending">Account wave charges</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>16-08-2021 <br/> 10:30:09</td>
-                            <td>$35,000.22</td>
-                            <td class="t-status pending">Transfer to Mendocino Redwood company/td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-     
-                          <tr>
-                            <td>16-08-2021 <br/> 12:04:17</td>
-                            <td>$23,000.65</td>
-                            <td class="t-status pending">JSCB for foreign trade of Vietnam-Michael Edmund</td>
-                            <td class="text-success">Credit</td>
-                          </tr>
-
-                          <tr>
-                            <td>13-08-2021 <br/>11:02:38</td>
-                            <td>$85.00</td>
-                            <td class="t-status pending">Service charges</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>13-08-2021 <br/> 09:55:40</td>
-                            <td>$150.00</td>
-                            <td class="t-status pending">Account maintenance charges</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>12-08-2021 <br/> 08:23:09</td>
-                            <td>$30,000.65</td>
-                            <td class="t-status pending">Transfer to Golden state warriors, LLC</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>10-08-2021 <br/> 06:01:50</td>
-                            <td>$100.00</td>
-                            <td class="t-status pending">Account wave charges</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>09-08-2021 <br/> 05:59:02</td>
-                            <td>$45,850.00</td>
-                            <td class="t-status pending">Priority one C.V - Harry Davidson</td>
-                            <td class="text-success">Credit</td>
-                          </tr>
-
-                          <tr>
-                            <td>09-08-2021 <br/> 05:32:04</td>
-                            <td>$5,500.21</td>
-                            <td class="t-status pending">Transfer to East West bank LTD</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>07-08-2021 <br/> 04:41:10</td>
-                            <td>$10,000.55</td>
-                            <td class="t-status pending">REF: 53261578 to bolthouse farms</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>06-08-2021 <br/> 03:30:20</td>
-                            <td>$14,196.22</td>
-                            <td class="t-status pending">-005674--113452 Brown Safe Manufacturing</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>04-08-2021 <br/>03:02:01</td>
-                            <td>$35,650.00</td>
-                            <td class="t-status pending">Transfer to Alesmith brewing company</td>
-                            <td class="text-danger">Debit</td>
-                          </tr>
-
-                          <tr>
-                            <td>04-08-2021 <br/> 11:28:45</td>
-                            <td>$17,250.00</td>
-                            <td class="t-status pending">U.S. Bancorp-Charles Hemming</td>
-                            <td class="text-success">Credit</td>
-                          </tr>
-
-                          <tr>
-                            <td>04-08-2021 <br/> 10:32:20</td>
-                            <td>$50,500.01</td>
-                            <td class="t-status pending">Trust Financial North Carolina</td>
-                            <td class="text-success">Credit</td>
-                          </tr>
-
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+              <div class="card-body">
+                <div id="progress_chart"></div>
               </div>
-            <!-- </div> -->
+            </div>
           </div>
-          
-            <aside class="sidebar sidebar-secondary">
-              <div class="widget customer-list">
-                <h3 class="widget-title">Saved Beneficiaries</h3>
-                <ul class="list avatar-list">
-                  <li>
-                    <a href="#">
-                      <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
-                        <span>ji</span>
-                      </figure>
-                      <div class="text">
-                        <strong>Joseph Ihenacho</strong>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
-                        <span>pc</span>
-                      </figure>
-                      <div class="text">
-                        <strong>Peter Chukwu</strong>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
-                        <span>he</span>
-                      </figure>
-                      <div class="text">
-                        <strong>Hannah Ekeh</strong>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure class="avatar-default" style="background-color: #23d1f1; color: #fff">
-                        <span>pi</span>
-                      </figure>
-                      <div class="text">
-                        <strong>Philip Isiah</strong>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure class="avatar-default" style="background-color: #3358cb; color: #fff">
-                        <span>ni</span>
-                      </figure>
-                      <div class="text">
-                        <strong>Nancy Iheme</strong>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
-                        <span>ak</span>
-                      </figure>
-                      <div class="text">
-                        <strong>Ade Kolapo</strong>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+        </div>
 
-              <!-- <div class="widget visitors">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <aside class="sidebar sidebar-secondary">
+        <div class="widget customer-list">
+          <h3 class="widget-title">Saved Beneficiaries</h3>
+          <ul class="list avatar-list">
+            <li>
+              <a href="#">
+                <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
+                  <span>ji</span>
+                </figure>
+                <div class="text">
+                  <strong>Joseph Ihenacho</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
+                  <span>pc</span>
+                </figure>
+                <div class="text">
+                  <strong>Peter Chukwu</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
+                  <span>he</span>
+                </figure>
+                <div class="text">
+                  <strong>Hannah Ekeh</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure class="avatar-default" style="background-color: #23d1f1; color: #fff">
+                  <span>pi</span>
+                </figure>
+                <div class="text">
+                  <strong>Philip Isiah</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure class="avatar-default" style="background-color: #3358cb; color: #fff">
+                  <span>ni</span>
+                </figure>
+                <div class="text">
+                  <strong>Nancy Iheme</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure class="avatar-default" style="background-color: #fb7636; color: #fff">
+                  <span>ak</span>
+                </figure>
+                <div class="text">
+                  <strong>Ade Kolapo</strong>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="widget visitors">
                 <div id="visitors"></div>
               </div> -->
-            </aside>
+      </aside>
 
-      </main>
+    </main>
 
-      <!-- Footer strat -->
-      <footer class="footer">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8">
-              <p>&copy; 1999 - 2021 Wells Fargo. All Rights Reserved. NMLSR ID 399801</p>
-            </div>
-            <div class="col-md-4 text-md-right">
-              <!-- <p>Developed with <i class="ti-heart"></i> by <a href="https://wwwinstagram.com/ari.n.ze">Arinze</a></p>
+    <!-- Footer strat -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <p>&copy; 1999 - 2021 Wells Fargo. All Rights Reserved. NMLSR ID 399801</p>
+          </div>
+          <div class="col-md-4 text-md-right">
+            <!-- <p>Developed with <i class="ti-heart"></i> by <a href="https://wwwinstagram.com/ari.n.ze">Arinze</a></p>
             </div> -->
           </div>
         </div>
-      </footer>
-      <!-- Footer end -->
+    </footer>
+    <!-- Footer end -->
 
-      <!-- Modal Box -->
-      <div class="modal">
-        <div class="modal-inner">
+    <!-- Modal Box -->
+    <div class="modal">
+      <div class="modal-inner">
+        <div class="modal-thumbnail">
+          <img src="assets/images/products/b1.jpg" alt="">
+        </div>
+        <div class="modal-content">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal product fade" id="popupModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+
           <div class="modal-thumbnail">
             <img src="assets/images/products/b1.jpg" alt="">
           </div>
-          <div class="modal-content">
-            
-          </div>
-        </div>
-      </div>
 
-      <!-- Modal -->
-      <div class="modal product fade" id="popupModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
-
-            <div class="modal-thumbnail">
-              <img src="assets/images/products/b1.jpg" alt="">
+          <div class="modal-body">
+            <div class="heading">
+              Dany Exclusive Products
+              <span>Man grass deep cattle</span>
             </div>
-
-            <div class="modal-body">
-              <div class="heading">
-                Dany Exclusive Products
-                <span>Man grass deep cattle</span>
-              </div>
-              <div class="invoice-widget">
-                <ul>
-                  <li><strong>View: </strong>2,350</li>
-                  <li><strong>Last sale: </strong>today</li>
-                  <li><strong>Total sale: </strong>15</li>
-                  <li><strong>Ratings: </strong>90%</li>
-                  <li><strong>Comments: </strong>2k</li>
-                </ul>                      
-              </div>
+            <div class="invoice-widget">
+              <ul>
+                <li><strong>View: </strong>2,350</li>
+                <li><strong>Last sale: </strong>today</li>
+                <li><strong>Total sale: </strong>15</li>
+                <li><strong>Ratings: </strong>90%</li>
+                <li><strong>Comments: </strong>2k</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- Modal Box end -->
-
     </div>
+    <!-- Modal Box end -->
 
-    <!-- JS -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/apexcharts.min.js"></script>
-    <script src="assets/js/ckeditor.js"></script>
-    <script src="assets/js/datatables.min.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/daterangepicker.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
-    <script src="assets/js/tagify.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/chart-options.js"></script>
-    <script src="assets/js/scripts.js"></script>
-  </body>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/apexcharts.min.js"></script>
+  <script src="assets/js/ckeditor.js"></script>
+  <script src="assets/js/datatables.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+  <script src="assets/js/daterangepicker.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/tagify.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/chart-options.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
 </html>

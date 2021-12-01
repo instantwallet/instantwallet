@@ -2103,6 +2103,15 @@ section {
   color: #24b314;
 }
 
+.g-ratio.yellowward {
+  color: yellow;
+}
+.g-ratio.yellowward:after {
+  content: "\f0d8";
+  color: yellow;
+}
+
+
 .g-ratio.upward:after {
   content: "\f0d8";
   color: #24b314;
