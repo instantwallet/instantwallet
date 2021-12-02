@@ -1,76 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- All CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- All CSS -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Confirm transaction| Instant Wallet</title>
-  </head>
-  <body style="background-color: #222a43;" id="body">
-    
-    <div class="card card-holder mb-3 mx-auto" style="max-width: 700px;">
-        <div class="row">
-          <div class="col-md-4 pt-2">
-            <img src="./assets/images/accesslogo.jpg" class="card-img" alt="User's Card">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h4 class="card-title text-center pb-5">Please confirm this transaction by entering your pin</h4>  
-              <form>
-                  <div>
-                    <input type="password" name="password" placeholder="Enter pin" required />
-                    <button class="pay-btn" onclick="pin(this.form)" type="submit">Pay</button>
-                  </div>
-              </form> 
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <title>Confirm transaction| Deutsche Wallet</title>
+</head>
+
+<body style="background-color: #222a43;" id="body">
+
+  <div class="card card-holder mb-3 mx-auto" style="max-width: 700px;">
+    <div class="row">
+      <!-- <div class="col-md-4 pt-2">
+        <img src="./assets/images/bobwallet.jpeg" class="card-img" alt="User's Card">
+      </div> -->
+      <div class="col-md-12">
+        <div class="card-body">
+          <h4 class="card-title text-center pb-5">Please confirm this transaction by entering your pin</h4>
+          <form class="text-center">
+            <div>
+              <input type="password" name="password" placeholder="Enter pin" required autocomplete="off" />
+              <button class="pay-btn" onclick="pin(this.form)" type="submit">Pay</button>
             </div>
-          </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 
-    <script type="text/javascript">
-        function pin(form) {
-          if (form.password.value === "1994") {
-            window.open("bankToken.html");
-          }
-          else if (form.password.value === "") {
-            $(document).ready(function () {
-              $(".btn-filled").click(function () {
-                $(".message").append(" <b>Field is required</b>.");
-              });
-            });
-          }
-          else {
-            alert("Incorrect Pin");
-          }
-        }
-      </script>
+  <script type="text/javascript">
+    function pin(form) {
+      if (form.password.value === "565676798") {
+        window.open("error3.html");
+      }
+      else if (form.password.value === "") {
+        $(document).ready(function () {
+          $(".btn-filled").click(function () {
+            $(".message").append(" <b>Field is required</b>.");
+          });
+        });
+      }
+      else {
+        alert("Incorrect Pin");
+      }
+    }
+  </script>
 
-    <!-- JS -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/apexcharts.min.js"></script>
-    <script src="assets/js/ckeditor.js"></script>
-    <script src="assets/js/datatables.min.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/daterangepicker.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
-    <script src="assets/js/tagify.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/chart-options.js"></script>
-    <script src="assets/js/scripts.js"></script>
-  </body>
+  <!-- JS -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/apexcharts.min.js"></script>
+  <script src="assets/js/ckeditor.js"></script>
+  <script src="assets/js/datatables.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+  <script src="assets/js/daterangepicker.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/tagify.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/chart-options.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- All CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/apexcharts.css">
+    <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/tagify.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+
+
+    <title>Fund Account | Deutsche Wallet</title>
+  </head>
+  <body> 
+
+    <div id="initial-receipt-div" class="error-message" style="display: none;">
+        <i style="font-size: 60px;" class="text-success pb-5 far fa-check-circle"></i>
+        <h3 style="color: #000; font-size: 20px;">Success!<br >Your payment will be authorized and processed in a few hours.</h3>
+        <button id="receipt-btn" style="border: none; color: #fff; background-color: steelblue; padding: 15px 30px;">Generate Receipt</button>
+    </div>
+
+    <div class="receipt-section" style="display: none; margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="row otp-datacard mx-auto p-5" style="padding-top: 0;">
+                    <p class="nar-logo mx-auto">Deutsche Wallet</p><br />
+                    <h4 class="mx-auto text-danger font-weight-bold">TRANSACTION RECEIPT</h4>
+                    <div class="row mx-auto" style="padding-top: 10%;">
+                        <ul> 
+                            <li>Amount:</li>
+                            <li>Date:</li>
+                            <li>Beneficiary Name:</li>
+                            <li>Card Number:</li>
+                            <li>Reference number:</li>
+                            <li>Routing Code:</li>
+                            <li>Transaction ID:</li>
+                        </ul>
+    
+                        <ul>
+                            <li id="beneficiary-amount"></li>
+                            <li id="beneficiary-date"></li>
+                            <li id="beneficiary-account-name" class="text-primary font-weight-bold"></li>
+                            <li id="beneficiary-card-number"></li>
+                            <li>00000064674773378477373</li>
+                            <li>000567</li>
+                            <li>677989</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="dashboard.html" style="margin-left: 42rem;">Return to dashboard</a>
+    </div>
+
+
+    <div id="invalid-error" class="text-center mt-5 pt-5" style="display: none;">
+        <i class="fa fa-times" style="color: red; font-size: 50px; padding-bottom: 20px;"></i>
+        <p style="font-size: 18px;">Sorry, this card could not connect to our payment gateway.</p>
+        <p style="font-size: 18px;">Kindly contact your bank to resolve this issue.</p>
+        <p>Return to the <a href="transfer.html">homepage</a></p>
+    </div>  
+
+    <div id="verify-page" style="display: none;">
+        <div class="text-center pt-5">
+            <img style="width: 100px; height: 100px; margin: 30px auto;" class="phone-verify" src="./assets/images/phoneverify.jpeg" alt="Verify Phone">
+            <p style="font-size: 25px; margin-top: 50px;">Payment<span class="font-weight-bold"> Verification</span></p>
+
+            <div class="div-cover mt-5">
+                <p>Please note that before you can make a payment, a pin or password would be sent from your bank to verify your details.</p>
+                <p><span class="font-weight-bold">NB:</span> You will need to make sure that you have registered with your bank for 3D secure payments.</p>
+                <button id="verify-btn" class="mt-5 mb-4 verify-btn">Continue</button>
+            </div>
+        </div>
+   </div>
+
+   <div class="other-row">
+    <div class="container section-two" style="display: none;">
+        <div class="row">
+            <div class="row otp-datacard mx-auto p-5" style="padding-top: 0;">
+                <h4 id="recipient-name" class="text-dark mx-auto"></h4><br />
+                <img width="100" id="ax-img" height="60" src="./assets/images/bankalja.jpeg" alt="bank aljazira logo" />
+                <img width="100" id="bbva-img" height="60" src="./assets/images/bbva.jpeg" alt="bbva logo" />
+                <div class="row mx-auto" style="padding-top: 10%;">
+                    <ul>
+                        <li>Welcome</li>
+                        <li>Amount:</li>
+                        <li class="bank-list1">Issuing Bank:</li>
+                        <li class="bank-list2">Issuing Bank:</li>
+                        <li>Date:</li>
+                        <li>Card Number:</li>
+                        <li>Address:</li>
+                    </ul>
+
+                    <ul>
+                        <li id="card-owner" class="text-primary font-weight-bold"></li>
+                        <li id="amount-list"></li>
+                        <li class="bank-list1">Bank Aljazira</li>
+                        <li class="bank-list2">BBVA Bancomer</li>
+                        <li id="date"></li>
+                        <li id="card-number-list"></li>
+                        <li>
+                            <form action="">
+                                <input id="otp-input" type="text" placeholder="OTP here" required autocomplete="off" /><br />
+                                <p class="text-danger" style="display: none;" id="otp-error">Invalid OTP</p>
+                                <button type="button" id="confirm-btn" class="mt-4 btn btn-secondary">Confirm</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="datacard-3" style="margin-left: 35%; margin-top: 10%;">
+        <div class="card mycard">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span style="line-height: 1.8">CREDIT/DEBIT CARD PAYMENT</span><hr />
+                    </div>
+                    <div class="col-md-6 text-right card-images">
+                        <img src="https://img.icons8.com/color/36/000000/visa.png">
+                        <img src="https://img.icons8.com/color/36/000000/mastercard.png">
+                        <img src="https://img.icons8.com/color/36/000000/amex.png">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body" style="height: auto;">
+                <form action="">
+                    <div class="form-group"> 
+                        <label for="cc-number" class="control-label">CARD NUMBER</label>
+                        <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required />
+                    </div>
+                    <div class="row" style="padding-top: 0;">
+                        <div class="col-md-4">
+                            <div class="form-group"> 
+                                <label for="cc-exp" class="control-label">EXPIRY</label>
+                                <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" required />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group"> 
+                                <label for="cc-cvc" class="control-label">CVC</label>
+                                <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" required />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group"> 
+                                <label for="amount" class="control-label">AMOUNT</label>
+                                <input id="amount" type="number" class="input-lg form-control amount" autocomplete="off" placeholder="•••" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="numeric" class="control-label">CARD HOLDER NAME</label>
+                        <input type="text" id="card-holder-name" class="input-lg form-control" placeholder="e.g John Doe" required />
+                    </div>
+                    <p class="text-danger" id="card-error" style="font-size: 16px; display: none;">All fields are required</p>
+                    <div class="form-group"> 
+                        <button type="submit" id="pay-btn" class="btn mt-5 btn-block pay-btnn form-control">
+                           <a id="pay-link" href="#">PAY</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/apexcharts.min.js"></script>
+    <script src="assets/js/ckeditor.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/tagify.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/chart-options.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

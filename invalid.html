@@ -1,74 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- All CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/css/daterangepicker.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/apexcharts.css">
-    <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/css/tagify.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- All CSS -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/apexcharts.css">
+  <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="assets/css/tagify.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
 
-    <title>Error | Instant Wallet</title>
-  </head>
-  <body style="background-color: #222a43;">
-    <div id="main-wrapper" class="error-message">
-      <h3>Sorry!</h3>
-      <p>This account is temporarily blocked. Please input your token to reactivate</p>
-      <form>
-        <input class="p-2" type="text" name="password" placeholder="Token here..." required>
-        <button type="submit" onclick="pin(this.form)" class="sorry-btn mt-5">SUBMIT</button>
-      </form>
-      </div>
-    </div>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-    <script type="text/javascript">
-        function pin(form) {
-          if (form.password.value === "3277235331412") {
-            window.open("dashboard.html");
-          }
-          else if (form.password.value === "") {
-            $(document).ready(function () {
-              $(".btn-filled").click(function () {
-                $(".message").append(" <b>Field is required</b>.");
-              });
-            });
-          }
-          else {
-            alert("Incorrect Token");
-          }
-        }
-      </script>
+  <title>Error | Deutsche Wallet</title>
+</head>
+
+<body style="background-color: #222a43;">
+  <div id="main-wrapper" class="error-message">
+    <h3>Sorry!</h3>
+    <p>This account is temporarily blocked. Please input your token to reactivate</p>
+    <form>
+      <input class="p-2" type="text" name="password" placeholder="Token here..." required>
+      <button type="submit" onclick="pin(this.form)" class="sorry-btn mt-5">SUBMIT</button>
+    </form>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    function pin(form) {
+      if (form.password.value === "3277235331412") {
+        window.open("dashboard.html");
+      }
+      else if (form.password.value === "") {
+        $(document).ready(function () {
+          $(".btn-filled").click(function () {
+            $(".message").append(" <b>Field is required</b>.");
+          });
+        });
+      }
+      else {
+        alert("Incorrect Token");
+      }
+    }
+  </script>
 
 
-    <!-- JS -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/apexcharts.min.js"></script>
-    <script src="assets/js/ckeditor.js"></script>
-    <script src="assets/js/datatables.min.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/daterangepicker.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
-    <script src="assets/js/tagify.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/chart-options.js"></script>
-    <script src="assets/js/scripts.js"></script>
-  </body>
+  <!-- JS -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/apexcharts.min.js"></script>
+  <script src="assets/js/ckeditor.js"></script>
+  <script src="assets/js/datatables.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+  <script src="assets/js/daterangepicker.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/tagify.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/chart-options.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
 </html>

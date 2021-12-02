@@ -2103,15 +2103,6 @@ section {
   color: #24b314;
 }
 
-.g-ratio.yellowward {
-  color: yellow;
-}
-.g-ratio.yellowward:after {
-  content: "\f0d8";
-  color: yellow;
-}
-
-
 .g-ratio.upward:after {
   content: "\f0d8";
   color: #24b314;
@@ -5787,4 +5778,149 @@ display: block
 .long-doc {
   line-height: 35px;
   letter-spacing: 1.2px;
+}
+.card-main {
+  margin-top: 55px;
+}
+.card-section {
+  padding: 20px;
+  background-color: #efefef;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #777;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+.body-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../images/payment-bg.jpg') !important;
+  height: 100vh;
+  background-size: cover;
+}
+.card-section:hover {
+  background-color: #eb1254;
+  color: #fff;
+}
+.mycard {
+  border: none;
+  width: 400px;
+  border-radius: 12px;
+  color: #fff;
+  background-image: linear-gradient(to right top, #280537, #56034c, #890058, #bc005b, #eb1254)
+}
+.phone-verify {
+  border-radius: 50%;
+}
+.div-cover {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  padding: 30px 50px;
+  width: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.verify-btn {
+  color: #fff;
+  background-color: #f0f7ff40;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 20px; 
+}
+.verify-background {
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+}
+.number span {
+  font-size: 20px;
+  font-weight: 600
+}
+
+.cardholder,
+.expires {
+  font-weight: 600;
+  font-size: 17px
+}
+
+.name,
+.date {
+  font-size: 15px
+}
+.otp-datacard {
+  width: 600px;
+  height: auto;
+  background-color: #f5f5f5;
+  /* box-shadow: 10px 10px 5px -5px rgba(235,232,235,1); */
+  border-radius: 3px;
+}
+.otp-datacard h4 {
+  font-size: 1.2rem;
+}
+
+.otp-background {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/otpbackground.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.g-ratio.yellowward {
+  color: yellow;
+}
+.g-ratio.yellowward:after {
+  content: "\f0d8";
+  color: yellow;
+}
+
+ul {
+  padding: 0 10px;
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.card-images img {
+  display: inline-block;
+  width: 38px;
+}
+.pay-btnn {
+  color: #fff;
+  border-color: #537895;
+  border: 1px solid #537895;
+}
+.pay-btnn:hover {
+  color: #fff;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .overall {
+      height: auto;
+  }
+  .row h3 {
+      font-size: 2.3rem;
+      line-height: 40.4px;
+  }
+  .row p {
+      color: #fff;
+      font-size: 1.3rem;
+      width: 90%;
+  }
+  .datacard {
+     margin: 10px 20px;
+  }
+  .card {
+      margin: 0 auto;
+      width: 350px;
+  }
+  .div-cover {
+      padding: 30px 50px;
+      width: 300px;
+  }
 }

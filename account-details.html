@@ -15,36 +15,39 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-  <title>Account Details | Instant Wallet</title>
+  <title>Account Details | Deutsche Wallet</title>
 </head>
 
 <body style="background-color: #222a43;" id="body">
 
   <div class="card card-holder mb-3 mx-auto" style="max-width: 700px;">
     <div class="row">
-      <div class="col-md-4 pt-5">
-        <img src="./assets/images/accesslogo.jpg" class="card-img" alt="User's Card">
-      </div>
-      <div class="col-md-8">
+      <!-- <div class="col-md-4 pt-5">
+        <img src="./assets/images/bobwallet.jpeg" class="card-img mt-5" alt="User's Card">
+      </div> -->
+      <div class="col-md-12">
         <div class="card-body">
-          <h4 class="card-title text-center pb-5">Account Details</h4>
+          <h4 class="card-title text-center pb-5 font-weight-bold">Account Details</h4>
           <div class="d-flex justify-content-between card-details">
             <ul>
               <li>Account Name:</li>
               <li>Bank Name:</li>
               <li>Account Number:</li>
-              <li>BVN:</li>
+              <li>SWIFT CODE:</li>
+              <li>Bank Address:</li>
               <li>Amount:</li>
             </ul>
             <ul>
-              <li>BASIL C. OSIGWE</li>
-              <li>Access Bank</li>
-              <li>0695255246</li>
-              <li>22220007924</li>
+              <li>Heinz Hermann Thiele</li>
+              <li>Deutsche Bank</li>
+              <li>0017694832</li>
+              <li>DEUTDEFFXXX</li>
+              <li>TAUNUSANLAGE 12 City FRANKFURT AM MAIN Country Germany</li>
               <li>
-                <form action="confirm.html">
-                  ₦<input type="text" placeholder="Enter Amount" required /><br>
-                  <input type="submit" class="token-btn submit-btn" value="Continue" required />
+                <form>
+                  <span style="font-size: 25px; margin-right: 5px;">€</span><input type="text"
+                    placeholder="Enter Amount" required /><br>
+                  <button type="button" id="token-btn" class="token-btn submit-btn">Continue</button>
                 </form>
               </li>
             </ul>
@@ -71,6 +74,7 @@
   <script src="assets/js/perfect-scrollbar.min.js"></script>
   <script src="assets/js/chart-options.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
