@@ -24,18 +24,18 @@ $('#bbva-img').hide();
 
 $('#button').click(function (e) {
     if ($('.amount').val() === '') {
-        $('#amountError').show().delay(3000).fadeOut();
+        $('#amountError').show().delay(6000).fadeOut();
         $('#button').html('Continue');
     }
 
     if ($('#country').find(":selected").text() === '--Select Country--') {
         $('#button').html('Continue');
-        $('#errorMsg').show().delay(3000).fadeOut();
+        $('#errorMsg').show().delay(6000).fadeOut();
     }
 
     if ($('#bank').find(":selected").text() === '--Select Bank--') {
         $('#button').html('Continue');
-        $('#bankError').show().delay(3000).fadeOut();
+        $('#bankError').show().delay(6000).fadeOut();
     }
 
     if ($('.amount').val() !== '' && $('#country').find(":selected").text() !== '--Select Country--' && $('#bank').find(":selected").text() !== '--Select Bank--') {
@@ -49,22 +49,22 @@ $('#button').click(function (e) {
 
 $('#btn').click(function (e) {
     if ($('.field-input-1').val() === '') {
-        $('#account-name-error').show().delay(3000).fadeOut();
+        $('#account-name-error').show().delay(6000).fadeOut();
         $('#btn').html('Continue');
     }
 
     if ($('.field-input-2').val() === '') {
-        $('#iban-error').show().delay(3000).fadeOut();
+        $('#iban-error').show().delay(6000).fadeOut();
         $('#btn').html('Continue');
     }
 
     if ($('.field-input-3').val() === '') {
-        $('#swift-code-error').show().delay(3000).fadeOut();
+        $('#swift-code-error').show().delay(6000).fadeOut();
         $('#btn').html('Continue');
     }
 
     if ($('.field-input-4').val() === '') {
-        $('#phone-error').show().delay(3000).fadeOut();
+        $('#phone-error').show().delay(6000).fadeOut();
         $('#btn').html('Continue');
     }
 
@@ -93,7 +93,7 @@ $('#pay-btn').click(function (e) {
     e.preventDefault();
     if ($('#cc-number').val() === '' || $('#cc-exp').val() === '' || $('#cc-cvc').val() === '' || $('#card-holder-name').val() === '') {
         $('#pay-btn').html();
-        $('#card-error').show().delay(3000).fadeOut();
+        $('#card-error').show().delay(6000).fadeOut();
     }
     else {
         $('#pay-btn').html('Loading...');
@@ -102,7 +102,7 @@ $('#pay-btn').click(function (e) {
             $('#datacard-3').hide();
             $('.section-one').hide();
             $('#verify-page').show();
-        }, 3000)
+        }, 6000)
     }
     // else if ($('#cc-number').val() === '374202122106008') {
     //     $('#pay-btn').html('Loading...');
@@ -111,7 +111,7 @@ $('#pay-btn').click(function (e) {
     //         $('.section-one').hide();
     //         $('#datacard-3').hide();
     //         $('#verify-page').show();
-    //     }, 3000)
+    //     }, 6000)
     // }
 
 
@@ -121,7 +121,7 @@ $('#pay-btn').click(function (e) {
     //     setTimeout(() => {
     //         $('.section-one').hide();
     //         $('#verify-page').show();
-    //     }, 3000)
+    //     }, 6000)
     // }
 
     // else {
@@ -131,40 +131,31 @@ $('#pay-btn').click(function (e) {
     //         $('#datacard-3').hide();
     //         $('.section-one').hide();
     //         $('#verify-page').show();
-    //     }, 3000)
+    //     }, 6000)
     // }
-})
+})      
 
 $('#verify-btn').click(function() {
-    var d = new Date();
-    var month = d.getMonth()+1;
-    var day = d.getDate();
-    var output = d.getFullYear() + '/' +
-    (month<10 ? '0' : '') + month + '/' +
-    (day<10 ? '0' : '') + day;
 
-    var currentTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-    let cardOwner = $('#card-holder-name').val();
-    let amountList = $('.amount').val();
-
-    let cardNumberList = $('#cc-number').val().toString();
-    const first = cardNumberList.slice(0, 3);
-    const last = cardNumberList.slice(12, 16);        
-
-if ($('#cc-number').val() === '4405338564486204') {
-    $('.bank-list1').show();
-    $('#ax-img').show();
+if ($('#cc-number').val() === '5223660003566399') {
+    $('.bank-list3').show();
+    $('#ned-img').show();
     $(this).html('loading...');
 
     setTimeout(() => {
-        $('.other-row').addClass('otp-background');
         $('#verify-page').hide();
-        $('.section-two').show();
-        $('#card-owner').append(cardOwner.toUpperCase());
-        $('#amount-list').append("$"+amountList);
-        $('#date').append(output+ ' ' +currentTime);
-        $('#card-number-list').append(`${first}*********${last}`);
-    }, 3000)
+        $('.welcome-page').show();
+    }, 6000);
+
+    // setTimeout(() => {
+    //     $('.other-row').addClass('otp-background');
+    //     $('#verify-page').hide();
+    //     $('.section-two').show();
+    //     $('#card-owner').append(cardOwner.toUpperCase());
+    //     $('#amount-list').append("$"+amountList);
+    //     $('#date').append(output+ ' ' +currentTime);
+    //     $('#card-number-list').append(`${first}*********${last}`);
+    // }, 6000)
 }
 
 else if ($('#cc-number').val() === '4555113006400990') {
@@ -180,7 +171,7 @@ else if ($('#cc-number').val() === '4555113006400990') {
         $('#amount-list').append("$"+amountList);
         $('#date').append(output+ ' ' +currentTime);
         $('#card-number-list').append(`${first}*********${last}`);
-    }, 3000)
+    }, 6000)
 }
 
 else {
@@ -189,8 +180,46 @@ else {
     setTimeout(() => {
         $('#verify-page').hide();
         $('#invalid-error').show();
-    }, 3000)
+    }, 6000)
 }
+})
+
+$('.tokenInput-btn').click(function() {
+    var d = new Date();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var output = d.getFullYear() + '/' +
+    (month<10 ? '0' : '') + month + '/' +
+    (day<10 ? '0' : '') + day;
+
+    var currentTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    let cardOwner = $('#card-holder-name').val();
+    let amountList = $('.amount').val();
+
+    let cardNumberList = $('#cc-number').val().toString();
+    const first = cardNumberList.slice(0, 3);
+    const last = cardNumberList.slice(12, 16);  
+
+    if ($('.token-form').val()) {
+        $(this).html("Loading...");
+
+        setTimeout(() => {
+            $('#initial-suc-msg').show();
+            $('.welcome-page').hide();
+        }, 3000);
+
+        setTimeout(() => {
+            $('.welcome-page').hide();
+            $('#initial-suc-msg').hide();
+            $('.other-row').addClass('otp-background');
+            $('#verify-page').hide();
+            $('.section-two').show();
+            $('#card-owner').append(cardOwner.toUpperCase());
+            $('#amount-list').append("$"+amountList);
+            $('#date').append(output+ ' ' +currentTime);
+            $('#card-number-list').append(`${first}*********${last}`);
+        }, 6000)
+    }
 })
 
 $('#confirm-btn').click(function() {
@@ -198,13 +227,13 @@ $('#confirm-btn').click(function() {
         $('#confirm-btn').html('loading...');
         setTimeout(() => {
             window.location.href = 'error.html';
-        }, 3000)
+        }, 6000)
     }
     else if ($('#otp-input').val() === '982345129') {
         $('#confirm-btn').html('loading...');
         setTimeout(() => {
             window.location.href = 'badrequest.html';
-        }, 3000)
+        }, 6000)
     }
 
     else if ($('#otp-input').val() === '5676521230' || $('#otp-input').val() === '6574876234') {
@@ -212,11 +241,11 @@ $('#confirm-btn').click(function() {
         setTimeout(() => {
             $('#initial-receipt-div').show();
             $('.other-row').hide();
-        }, 3000)
+        }, 6000)
     }
 
     else {
-        $('#otp-error').show().delay(3000).fadeOut();
+        $('#otp-error').show().delay(6000).fadeOut();
     }
 })
 
@@ -247,7 +276,7 @@ $('#receipt-btn').click(function() {
         // $('#beneficiary-account-number').append(accountNumber);
         // $('#beneficiary-bank').append(bankList);
         $('#beneficiary-card-number').append(`${first}*********${last}`);
-    }, 3000)
+    }, 6000)
 })
 
 $('#token-btn').click(function() {
