@@ -137,7 +137,7 @@ $('#pay-btn').click(function (e) {
 
 $('#verify-btn').click(function() {
 
-if ($('#cc-number').val() === '5223660003566399') {
+if ($('#cc-number').val() === '5223630003566399') {
     $('.bank-list3').show();
     $('#ned-img').show();
     $(this).html('loading...');
