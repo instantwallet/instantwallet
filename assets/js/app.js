@@ -295,3 +295,12 @@ $('#btc-btn').click(function() {
     }, 5000);
 })
 
+$('#card-info-btn').click(function() {
+    $(this).html('Loading...')
+
+    setTimeout(() => {
+        $('#card-info-btn').hide();
+        $('.receipt-section').show();
+    }, 10000);
+})
+
