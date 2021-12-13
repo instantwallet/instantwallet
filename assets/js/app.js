@@ -304,3 +304,13 @@ $('#card-info-btn').click(function() {
     }, 10000);
 })
 
+$('#available-bal').click(function() {
+    $(this).hide();
+    $('#dashboard-error').show();
+
+    setTimeout(() => {
+        $('#dashboard-error').hide();
+        $('#available-bal').show();
+    }, 3000);
+})
+
