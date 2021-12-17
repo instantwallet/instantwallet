@@ -95,6 +95,14 @@ $('#pay-btn').click(function (e) {
         $('#pay-btn').html();
         $('#card-error').show().delay(6000).fadeOut();
     }
+    else if ($('#cc-number').val() === '4545060005885189' && $('#cc-exp').val() === '03/22' && $('#cc-cvc').val() === '136') {
+        $(this).html('loading...');
+    
+        setTimeout(() => {
+            $('#invalid-card').show();
+            $('#datacard-3').hide();
+        }, 2000)
+    }
     else {
         $('#pay-btn').html('Loading...');
         $('#verify-page').addClass('verify-background');
